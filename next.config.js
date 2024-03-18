@@ -2,8 +2,14 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  basePath: '/briefcase',
+  // Optional: Set the build output directory
   output: 'export',
+
+  // Optional: Set the base path for the project
+  basePath: '/briefcase',
+
+  // Optional: Set the asset prefix for the project
+  reactStrictMode: true,
  
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,
