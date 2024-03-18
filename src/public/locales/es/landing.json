@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "name": "Proyecto 1",
+            "description": "Descripción 1",
+            "range": "Feb 2020 - Mar 2021"
+        },
+        {
+            "name": "Proyecto 2",
+            "description": "Descripción 2",
+            "range": "Abr 2021 - May 2022"
+        },
+        {
+            "name": "Proyecto 3",
+            "description": "Descripción 3",
+            "range": "Jun 2022 - Jul 2023"
+        },
+        {
+            "name": "",
+            "description": "Próximamente...",
+            "range": ""
+        }
+    ]
+}
