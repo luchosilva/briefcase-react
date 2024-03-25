@@ -5,6 +5,8 @@ const Timeline = () => {
 
   const projects: any[] = t('projects', { returnObjects: true });
 
+  const isParNumber = (num: number) => num % 2 === 0;
+
   return (
     <div>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -19,11 +21,21 @@ const Timeline = () => {
                 />
               </svg>
             </div>
-            <div className="timeline-start md:text-end mb-10">
-              <time className="font-mono italic">{project.range}</time>
-              <div className="text-lg font-black">{project.name}</div>
-              {project.description}
-            </div>
+            {
+              isParNumber(index) ? (
+                <div className="timeline-start md:text-end mb-10">
+                  <time className="font-mono italic">{project.range}</time>
+                  <div className="text-lg font-black">{project.name}</div>
+                  {project.description}
+                </div>
+              ) : (
+                <div className="timeline-end md:text-start mb-10">
+                  <time className="font-mono italic">{project.range}</time>
+                  <div className="text-lg font-black">{project.name}</div>
+                  {project.description}
+                </div>
+              )
+            }
             {index !== projects.length - 1 && <hr className="bg-primary" />}
           </li>
         ))}
