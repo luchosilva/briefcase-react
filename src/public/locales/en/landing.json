@@ -1,19 +1,19 @@
 {
     "projects": [
         {
-            "name": "Project 1",
-            "description": "Description 1",
-            "range": "Feb 2020 - Mar 2021"
+            "name": "Frint S.A.",
+            "description": "- Correction, development, deployment and maintenance of a mobile application to perform inventories through barcode reading, written in Java language for the company's ERP. \n - Support in the technical support area of the company.",
+            "range": "Nov/2021 - Dec/2022"
         },
         {
-            "name": "Project 2",
-            "description": "Description 2",
-            "range": "Apr 2021 - May 2022"
+            "name": "Smart Araucanía - Hub Global Smart City",
+            "description": "- Development, deployment and maintenance of a web platform that provides different services automatically powered by microservices written in Python, which were hosted on a server and orchestrated by Docker. \n - Analysis, development, construction and continuous improvement of software to integrate with the UFRO intranet web platform, using React, NextJs, Redux, TailwindCSS, TypeScript, NestJs, SP-SQL, SQL, Gitlab technologies.",
+            "range": "Mar/2022 - Dec/2022"
         },
         {
-            "name": "Project 3",
-            "description": "Description 3",
-            "range": "Jun 2022 - Jul 2023"
+            "name": "Acroventus S.A.",
+            "description": "Analysis, development, construction and continuous improvement of software using Vue.js, NuxtJs, Angular, TailwindCSS, BootstrapCSS, TypeScript, NestJs, Loopback, SP-SQL, SQL, Gitlab technologies.",
+            "range": "Dec/2022 - Feb/2024"
         },
         {
             "name": "",
