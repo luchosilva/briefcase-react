@@ -22,9 +22,9 @@ export const Navbar = ({ open, setOpen }: NavbarProps) => {
 
   return (
     <nav className="flex justify-between items-center h-20 py-4 bg-blue-600-color px-7">
-      <div className="flex">
+      <div className="flex items-center">
         {theme === 'dark' ? <MoonIcon className="w-12 min-w-[40px] rounded-md hover:text-blue-color" /> : <SunIcon className="w-12 min-w-[40px] rounded-md hover:text-blue-color" />}
-        {i18n.language === 'es' ? <div className="w-12 min-w-[40px] text-3xl rounded-md hover:text-blue-color">🇪🇸</div> : <div className="w-12 min-w-[40px] text-3xl rounded-md hover:text-blue-color">🇺🇸</div>}
+        {i18n.language === 'es' ? <div className="w-12 min-w-[40px] text-4xl rounded-md hover:text-blue-color">🇪🇸</div> : <div className="w-12 min-w-[40px] text-4xl rounded-md hover:text-blue-color">🇺🇸</div>}
       </div>
       {/* <Bars4Icon onClick={() => setOpen(!open)} className="w-12 min-w-[40px] rounded-md hover:text-blue-color cursor-pointer" /> */}
       <div className="flex items-center gap-3">
