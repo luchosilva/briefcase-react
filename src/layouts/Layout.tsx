@@ -17,7 +17,7 @@ export const Layout = ({ children }: any) => {
   return (
     <ThemeProvider>
       <ClientThemeWrapper>
-        <div className="flex h-screen">
+        <div className="flex h-screen dark:bg-gradient-to-br dark:from-cyan-800 dark:to-blue-900">
           {/* <Sidebar open={open} setOpen={setOpen} /> */}
           <div className="flex flex-col relative w-full">
             <Navbar open={open} setOpen={setOpen} />
