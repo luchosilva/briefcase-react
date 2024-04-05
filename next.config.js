@@ -10,7 +10,9 @@ const nextConfig = {
 
   // Optional: Set the asset prefix for the project
   reactStrictMode: true,
- 
+
+  images: { unoptimized: true },
+
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,
  
