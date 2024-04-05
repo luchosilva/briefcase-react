@@ -7,17 +7,11 @@ import Footer from './Footer';
 
 export const Layout = ({ children }: any) => {
   const [open, setOpen] = useState(true);
-  /* const { role } = useAppSelector(selectAuth);
-  const [permissionList, setPermissionList] = useState<boolean>(true);
-  const router = useRouter();
-
-  useEffect(() => setPermissionList(validPermission(role)), [role]);
-  if (!permissionList) return <>{goToErrorPage(router)}</>; */
 
   return (
     <ThemeProvider>
       <ClientThemeWrapper>
-        <div className="flex h-screen dark:bg-gradient-to-br dark:from-cyan-800 dark:to-blue-900">
+        <div className="flex h-max dark:bg-gradient-to-br dark:from-cyan-800 dark:to-blue-900">
           {/* <Sidebar open={open} setOpen={setOpen} /> */}
           <div className="flex flex-col relative w-full">
             <Navbar open={open} setOpen={setOpen} />
