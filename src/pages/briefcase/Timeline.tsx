@@ -21,21 +21,19 @@ const Timeline = () => {
                 />
               </svg>
             </div>
-            {
-              isParNumber(index) ? (
-                <div className="timeline-start md:text-end mb-10">
-                  <time className="font-mono italic">{project.range}</time>
-                  <div className="text-lg font-black">{project.name}</div>
-                  {project.description}
-                </div>
-              ) : (
-                <div className="timeline-end md:text-start mb-10">
-                  <time className="font-mono italic">{project.range}</time>
-                  <div className="text-lg font-black">{project.name}</div>
-                  {project.description}
-                </div>
-              )
-            }
+            {isParNumber(index) ? (
+              <div className="timeline-start md:text-end mb-10">
+                <time className="font-mono italic">{project.range}</time>
+                <div className="text-lg font-black">{project.name}</div>
+                {project.description?.split('\n').map((item: string, index: number) => <p key={index + item.slice(0, 5)}>{item}</p>)}
+              </div>
+            ) : (
+              <div className="timeline-end md:text-start mb-10">
+                <time className="font-mono italic">{project.range}</time>
+                <div className="text-lg font-black">{project.name}</div>
+                {project.description?.split('\n').map((item: string, index: number) => <p key={index + item.slice(0, 5)}>{item}</p>)}
+              </div>
+            )}
             {index !== projects.length - 1 && <hr className="bg-primary" />}
           </li>
         ))}
