@@ -70,7 +70,7 @@ export const Navbar = ({ open, setOpen }: NavbarProps) => {
           <button tabIndex={0} className="btn btn-ghost">
             <SunIcon className="w-5 h-5" />
           </button>
-          <ul className="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-base-100 rounded-box w-40">
+          <ul className="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-base-100 rounded-box w-40 border dark:border-none">
             <li>
               <button onClick={() => changeTheme('light')} className="cursor-pointer" onKeyDown={() => changeTheme('light')}>
                 <SunIcon className="w-5 h-5" />
